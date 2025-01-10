@@ -15,13 +15,13 @@ public class Fabula extends Escrito{
         return factor * this.getPaginas() * palabrasPagina;
     }
     public String toString(){
-        return this.getOrigen() + "\n" + this.getTitulo() + "\n" + this.getAutor() + "\n" + this.getPaginas() + "\n" + this.getEnsenanzas();
+        return this.getOrigen() + "\n" + this.getTitulo() + "\n" + this.getAutor() + "\n" + this.getPaginas() + "\n" + this.getEnsenanza();
     }
     public String interpretacion() {
         return this.interpretacion;
     }
 
-    public String getEnsenanzas() {
+    public String getEnsenanza() {
         return ensenanzas;
     }
 
