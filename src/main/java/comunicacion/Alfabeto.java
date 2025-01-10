@@ -16,13 +16,12 @@ public class Alfabeto extends Pictograma{
         return this.interpretacion;
     }
     public String toString(){
-        char[] alfabetoArray = "abcdefghijklmnopqrstuvwxy".toCharArray();
         String alfabeto = "";
-        for (char letra : alfabetoArray) {
-            alfabeto += letra + ", ";
+        for (int i = 0; i < letras.length-1 ; i++) {
+            alfabeto += letras[i] + ", ";
         }
-        alfabeto += "z";
-        return  alfabeto;
+        alfabeto += letras[letras.length-1];
+        return alfabeto;
     }
 
     public String getInterpretacion() {
